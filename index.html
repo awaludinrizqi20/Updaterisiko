@@ -256,7 +256,13 @@ Peta Risiko Bencana Banjir Pekalongan
         bounds_group.addLayer(layer_BanjirPKL_3);
         map.addLayer(layer_BanjirPKL_3);
         var baseMaps = {};
-        L.control.layers(baseMaps,{'<img src="legend/BanjirPKL_3.png" /> Banjir PKL': layer_BanjirPKL_3,'<img src="legend/kelasrisikobanjir_2.png" /> kelas risiko banjir': layer_kelasrisikobanjir_2,"indeks_risiko_banjir": layer_indeks_risiko_banjir_1,"Positron": layer_Positron_0,}).addTo(map);
+        L.control.layers(baseMaps,{
+'<img src="legend/BanjirPKL_3.png" /> Titik Banjir': layer_BanjirPKL_3,
+'<img src="legend/kelasrisikobanjir_2.png" /> Batas Desa': layer_kelasrisikobanjir_2,
+"Indeks Risiko Banjir": layer_indeks_risiko_banjir_1,
+"Basemap": layer_Positron_0,
+}).addTo(map);
+       
         setBounds();
         L.ImageOverlay.include({
             getBounds: function () {
