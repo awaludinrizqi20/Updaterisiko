@@ -16,7 +16,7 @@
             margin: 0;
         }
         </style>
-        <title></title>
+        <title>Peta Risiko Bencana Banjir Pekalongan</title>
     </head>
     <body>
         <div id="map">
@@ -114,11 +114,11 @@
                     </tr>\
                     <tr>\
                         <th scope="row">Jumlah Penduduk</th>\
-                        <td>' + (feature.properties['Jumlah Pen'] !== null ? autolinker.link(feature.properties['Jumlah Pen'].toLocaleString()) : '') + '</td>\
+                        <td>' + (feature.properties['Jumlah Penduduk'] !== null ? autolinker.link(feature.properties['Jumlah Pen'].toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
                         <th scope="row">Kelas Risiko</th>\
-                        <td>' + (feature.properties['Kelas Risi'] !== null ? autolinker.link(feature.properties['Kelas Risi'].toLocaleString()) : '') + '</td>\
+                        <td>' + (feature.properties['Kelas Risiko'] !== null ? autolinker.link(feature.properties['Kelas Risi'].toLocaleString()) : '') + '</td>\
                     </tr>\
                 </table>';
             layer.bindPopup(popupContent, {maxHeight: 400});
@@ -132,7 +132,7 @@
                 dashArray: '',
                 lineCap: 'butt',
                 lineJoin: 'miter',
-                weight: 1.0, 
+                weight: 0.2, 
                 fillOpacity: 0,
                 interactive: true,
             }
